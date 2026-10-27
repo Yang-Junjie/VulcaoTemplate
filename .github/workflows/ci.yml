@@ -32,12 +32,10 @@ jobs:
             libxfixes-dev libxi-dev libxss-dev libxkbcommon-dev
 
       - name: Install Vulkan SDK
-        if: runner.os == 'Windows'
         uses: jakoch/install-vulkan-sdk-action@v1
         with:
           install_runtime: false
           cache: true
-          stripdown: true
 
       - name: Cache FetchContent dependencies
         uses: actions/cache@v4

@@ -18,7 +18,7 @@ exits cleanly. Use it as a GitHub template and add your own passes and shaders.
 
 - CMake 3.28+
 - A C++23 compiler
-- A recent Vulkan SDK with 1.4 headers (vulcao targets Vulkan 1.3 devices)
+- A recent Vulkan SDK (1.4+ headers and loader)
 - Ninja (recommended)
 
 ## Quick start
