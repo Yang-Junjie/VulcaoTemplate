@@ -7,10 +7,9 @@ exits cleanly. Use it as a GitHub template and add your own passes and shaders.
 
 ## What is included
 
-- `vulcao`, a thin RAII wrapper around Vulkan, fetched with FetchContent
-- SDL3 window creation and `VkSurfaceKHR` setup
-- `WindowPresenter` swapchain management with acquire/present synchronization
-- `FrameManager` frames-in-flight with per-slot fences and deferred destruction
+- A runnable Vulkan application skeleton built on vulcao and SDL3
+- Window, Vulkan surface, swapchain and per-frame synchronization already wired up
+- Resize and out-of-date swapchain handling, plus clean shutdown
 - CMake presets for Linux (clang) and Windows (clang-cl, MSVC)
 - GitHub Actions CI for Linux and Windows
 - Vendored `tinyobjloader` and `stb`
@@ -19,7 +18,7 @@ exits cleanly. Use it as a GitHub template and add your own passes and shaders.
 
 - CMake 3.28+
 - A C++23 compiler
-- A Vulkan 1.3 SDK (headers, loader and validation layers)
+- A recent Vulkan SDK with 1.4 headers (vulcao targets Vulkan 1.3 devices)
 - Ninja (recommended)
 
 ## Quick start
